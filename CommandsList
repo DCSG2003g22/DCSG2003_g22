@@ -1,5 +1,8 @@
 List for useful commands ++
 
+Login on manager
+ssh -i $env:USERPROFILE\.ssh\id_ed25519 ubuntu@10.212.172.72
+
 On db1 (VM)
   sudo su (become root)
   cd yugabyte-2025.2.0.0 (yb directory)

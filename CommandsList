@@ -1,7 +1,8 @@
 List for useful commands ++
 
 Login on manager
-ssh -i $env:USERPROFILE\.ssh\id_ed25519 ubuntu@10.212.172.72
+ssh -i $env:USERPROFILE\.ssh\id_ed25519 ubuntu@10.212.172.72 (windows)
+ssh -i ~/.ssh/id_rsa2 -D 1080 ubuntu@10.212.172.72 (mac + FoxyProxy)
 
 On db1 (VM)
   sudo su (become root)

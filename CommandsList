@@ -1,5 +1,14 @@
 List for useful commands ++
 
-Ybst - YB Status
-Ybstart - YB Start
-Ybstop - YB Stop
+On db1 (VM)
+  sudo su (become root)
+  cd yugabyte-2025.2.0.0 (yb directory)
+    Ybst - YB Status
+    Ybstart - YB Start
+    Ybstop - YB Stop
+
+
+
+
+To see all users on website
+  /home/ubuntu/yugabyte-2025.2.0.0/bin/ysqlsh   -h 192.168.128.239 -p 5433 -U bfacc -d bf   -c "SELECT count(*) FROM users;"

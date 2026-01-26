@@ -16,3 +16,29 @@ On db1 (VM)
 
 To see all users on website
   /home/ubuntu/yugabyte-2025.2.0.0/bin/ysqlsh   -h 192.168.128.239 -p 5433 -U bfacc -d bf   -c "SELECT count(*) FROM users;"
+
+
+
+when using github:
+
+
+
+1️⃣ Alltid pull før du starter
+git checkout main
+git pull --rebase
+
+2️⃣ Alltid jobb på egen branch
+git checkout -b simen/<beskrivende-navn>
+# eller
+git checkout -b eskild/<beskrivende-navn>
+
+3️⃣ Commit ofte – med navn
+git status
+git add .
+git commit -m "Kort og konkret beskrivelse"
+
+4️⃣ Push egen branch → PR på GitHub
+git push -u origin HEAD
+
+
+Gå deretter til GitHub → Pull Request → merge til main.

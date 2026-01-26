@@ -4,6 +4,8 @@ Login on manager
 ssh -i $env:USERPROFILE\.ssh\id_ed25519 ubuntu@10.212.172.72 (windows)
 ssh -i ~/.ssh/id_rsa2 -D 1080 ubuntu@10.212.172.72 (mac + FoxyProxy)
 
+ssh -i ~/.ssh/id_rsa3 ubuntu@
+
 On db1 (VM)
   sudo su (become root)
   cd yugabyte-2025.2.0.0 (yb directory)

@@ -47,3 +47,17 @@ git push -u origin HEAD
 
 
 Gå deretter til GitHub → Pull Request → merge til main.
+
+
+Bytte floating IP mellom balancer og downtime (maintenance)
+
+Fra balancer til downtime:
+openstack server remove floating ip balancer 10.212.170.221
+openstack server add floating ip downtime 10.212.170.221
+
+Fra downtime til balancer:
+openstack server remove floating ip downtime 10.212.170.221
+openstack server add floating ip balancer 10.212.170.221
+
+
+
